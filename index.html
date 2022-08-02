@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Recursion</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<div class="reveal">
+
+		<div class="slides">
+			<section data-auto-animate data-auto-animate-unmatched="fade">
+				<h3>Discreete Structures</h3>
+				<p>Recursions</p>
+
+			</section>
+			<section>
+				<h3>What is Recursion</h3>
+			</section>
+			<section data-auto-animate data-auto-animate-unmatched="fade">
+				<h3>Recursion</h3>
+				<p data-line-numbers data-trim>
+					In computer science, recursion is a method of solving a computational problem.Recursion solves such
+					recursive problems by using functions that call themselves from within their own code
+				</p>
+			</section>
+
+	
+			<section data-auto-animate data-auto-animate-unmatched="fade">
+				<h3>Example</h3>
+				<pre data-id="code"><code data-line-numbers class="hljs" data-trim>
+					function factorail(n) {
+					  ...
+					}
+
+
+				</code></pre>
+			</section>
+			<section data-auto-animate data-auto-animate-unmatched="fade">
+				<h3>Example</h3>
+
+				<pre data-id="code"><code data-line-numbers class="hljs" data-trim>
+					function factorial(n) {
+
+						return n * factorial(n-1)
+					
+					}
+				</code></pre>
+			</section>
+
+			<section data-auto-animate data-auto-animate-unmatched="fade">
+				<h3>Example</h3>
+
+				<pre data-id="code"><code data-line-numbers class="hljs" data-trim>
+					function factorial(n) {
+
+						return n * factorial(n-1)
+					
+					}
+
+					factorail(3)
+				</code></pre>
+			</section>
+			<section data-auto-animate data-auto-animate-unmatched="fade">
+				<h3>Example</h3>
+				<pre data-id="code"><code data-line-numbers class="hljs" data-trim>
+			function factorial(n) {
+				
+				if (n checkCondition == 0) {
+					return 1
+				}
+
+				return n * factorial(n-1)
+			
+			}
+
+			factorial(3)
+		</code></pre>
+			</section>
+
+
+			<section>
+
+				<section data-auto-animate>
+					<h3>Output</h3>
+					<pre data-id="code"><code data-line-numbers class="hljs" data-trim>
+								3 * 2 * 1
+								6
+							</code></pre>
+				</section>
+
+
+			</section>
+			<section>
+				<section>
+					<h3>Let's solve Tower Of Hoani with Recursion</h3>
+				</section>
+
+				<section data-auto-animate>
+					<h4>Code</h4>
+					<pre data-id="code"><code data-line-numbers class="hljs" data-trim>
+function tower(n, fromStick, toStick, usingStick) {
+	...
+}
+						</code></pre>
+				</section>
+
+				<section data-auto-animate>
+					<h4>Code</h4>
+					<pre data-id="code"><code data-line-numbers class="javascript" data-trim>
+function tower(n, fromStick, toStick, usingStick) {
+
+	tower(n - 1, fromStick, usingStick, toStick, steps++)
+
+	console.log
+	(`Move Disk ${n} from ${fromStick} to ${toStick}`)
+}
+						</code></pre>
+				</section>
+
+				<section data-auto-animate>
+					<h4>Code</h4>
+					<pre data-id="code"><code data-line-numbers class="jsx" data-trim>
+let steps = 0
+
+function tower(n, fromStick, toStick, usingStick) {
+
+	tower(n - 1, fromStick, usingStick, toStick, steps++)
+
+	console.log
+	(`Move Disk ${n} from ${fromStick} to ${toStick}`)
+
+	tower(n - 1, usingStick, toStick, fromStick, steps++)
+
+
+}
+						</code></pre>
+				</section>
+			</section>
+
+			<section>
+
+
+				<section data-auto-animate>
+					<h4>Code</h4>
+					<pre data-id="code"><code data-line-numbers class="js" data-trim>
+let steps = 0
+function tower(n, fromStick, toStick, usingStick) {
+
+	if (n == 1) {
+		console.log
+			(`Move Disk1 from ${fromStick} to ${toStick}`)
+		steps++
+		return 0
+	}
+
+	tower(n - 1, fromStick, usingStick, toStick, steps++)
+
+	console.log
+		(`Move Disk ${n} from ${fromStick} to ${toStick}`)
+
+	tower(n - 1, usingStick, toStick, fromStick, steps++)
+
+}
+							
+						</code></pre>
+				</section>
+
+				<section data-auto-animate>
+					<h5>Let's Call the Function</h5>
+					<pre data-id="code"><code data-line-numbers class="hljs" data-trim>
+let noOfDisks = 3
+tower(noOfDisks, 'A', 'C', 'B')
+console.log(`Total Steps = ${steps}`)
+						</code></pre>
+				</section>
+
+			</section>
+
+
+
+			<section>
+				<section data-auto-animate>
+					<h3>Output</h3>
+					<ul>
+						<li>Move Disk 1 from A to C</li>
+					</ul>
+				</section>
+				<section data-auto-animate>
+					<h3>Output</h3>
+					<ul>
+						<li>Move Disk 1 from A to C</li>
+						<li>Move Disk 2 from A to B</li>
+					</ul>
+				</section>
+				<section data-auto-animate>
+					<h3>Output</h3>
+					<ul>
+						<li>Move Disk 1 from A to C</li>
+						<li>Move Disk 2 from A to B</li>
+						<li>Move Disk 1 from C to B</li>
+					</ul>
+				</section>
+
+				<section data-auto-animate>
+					<h3>Output</h3>
+					<ul>
+						<li>Move Disk 1 from A to C</li>
+						<li>Move Disk 2 from A to B</li>
+						<li>Move Disk 1 from C to B</li>
+						<li>Move Disk 3 from A to C</li>
+					</ul>
+				</section>
+
+				<section data-auto-animate>
+					<h3>Output</h3>
+					<ul>
+						<li>Move Disk 1 from A to C</li>
+						<li>Move Disk 2 from A to B</li>
+						<li>Move Disk 1 from C to B</li>
+						<li>Move Disk 3 from A to C</li>
+						<li>Move Disk 1 from B to A</li>
+					</ul>
+				</section>
+
+				<section data-auto-animate>
+					<h3>Output</h3>
+					<ul>
+						<li>Move Disk 1 from A to C</li>
+						<li>Move Disk 2 from A to B</li>
+						<li>Move Disk 1 from C to B</li>
+						<li>Move Disk 3 from A to C</li>
+						<li>Move Disk 1 from B to A</li>
+						<li>Move Disk 2 from B to C</li>
+					</ul>
+				</section>
+
+				<section data-auto-animate>
+					<h3>Output</h3>
+					<ul>
+						<li>Move Disk 1 from A to C</li>
+						<li>Move Disk 2 from A to B</li>
+						<li>Move Disk 1 from C to B</li>
+						<li>Move Disk 3 from A to C</li>
+						<li>Move Disk 1 from B to A</li>
+						<li>Move Disk 2 from B to C</li>
+						<li>Move Disk 1 from A to C</li>
+					</ul>
+				</section>
+				<section data-auto-animate>
+					Total Steps = 7
+				</section>
+
+				<section data-auto-animate="">
+					<a href="https://aa961.github.io/recursion" target="_blank">Run By Vue Js</a>
+				</section>
+			</section>
+
+
+
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<!-- <script src="../plugin/highlight/highlight.js"></script> -->
+		<script src="highlight.js"></script>
+		<script>
+			Reveal.initialize({
+				center: true,
+				hash: true
+				// plugins: [RevealHighlight]
+			});
+		</script>
+		<script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+
+</html>
