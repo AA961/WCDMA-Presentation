@@ -5,327 +5,99 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<link rel="stylesheet" href="dist/reveal.css">
-	<link rel="stylesheet" href="dist/theme/moon.css" id="theme">
+	<link rel="stylesheet" href="dist/theme/sky.css" id="theme">
 	<link rel="stylesheet" href="style.css">
-	<title>Recursion</title>
+	<link rel="shortcut icon" href="fav.png" type="image/x-icon">
+	<title>WCDMA | Wirless Communication</title>
 </head>
 
 <body>
 
 	<div class="reveal">
-
 		<div class="slides">
-			<section data-auto-animate data-auto-animate-unmatched="fade">
-				<h3>Discreete Structures</h3>
-				<p>Recursions</p>
-
-				<h4>Represented By : Ammar Ahmed</h4>
-
-			</section>
-			<section>
-				<h3>What is Recursion</h3>
-				<div class="flex">
-					<div class="rec rec-1">
-						<div class="rec">
-							<div class="rec">
-								<div class="rec res-end">Recursion</div>
-							</div>
-						</div>
-					</div>
-
-				</div>
-				
-			</section>
-			<section data-auto-animate data-auto-animate-unmatched="fade">
-				<h3>Recursion</h3>
-				<p data-line-numbers data-trim>
-					In computer science, recursion is a method of solving a computational problem.Recursion solves such
-					recursive problems by using functions that call themselves from within their own code
+			<section data-transition="fade">
+				<h3>Wirless Communication</h3>
+				<h2> WCDMA </h2>
+				<p>
+					In this session, we will explore the key aspects and features of WCDMA technology and its
+					significance in modern mobile networks.
 				</p>
 			</section>
 
-	
-			<section data-auto-animate data-auto-animate-unmatched="fade">
-				<h3>Example</h3>
-				<pre data-id="code"><code data-line-numbers class="hljs" data-trim>
-					function factorial(n) {
-					  ...
-					}
-
-
-				</code></pre>
-			</section>
-			<section data-auto-animate data-auto-animate-unmatched="fade">
-				<h3>Example</h3>
-
-				<pre data-id="code"><code data-line-numbers class="hljs" data-trim>
-					function factorial(n) {
-
-						return n * factorial(n-1)
-					
-					}
-				</code></pre>
+			<section data-transition="fade">
+				<h2>Introduction to WCDMA</h2>
+				<p>
+					WCDMA (Wideband Code Division Multiple Access) is a wireless communication technology used in 3G and
+					beyond mobile networks.
+					It allows multiple users to share the same frequency band using unique codes.
+					WCDMA provides high data rates and supports voice and data transmission.
+				</p>
 			</section>
 
-			<section data-auto-animate data-auto-animate-unmatched="fade">
-				<h3>Example</h3>
-
-				<pre data-id="code"><code data-line-numbers class="hljs" data-trim>
-					function factorial(n) {
-
-						return n * factorial(n-1)
-					
-					}
-
-					factorail(3)
-				</code></pre>
-			</section>
-			<section data-auto-animate data-auto-animate-unmatched="fade">
-				<h3>Example</h3>
-				<pre data-id="code"><code data-line-numbers class="hljs" data-trim>
-			function factorial(n) {
-				
-				if (n checkCondition == 0) {
-					return 1
-				}
-
-				return n * factorial(n-1)
-			
-			}
-
-			factorial(3)
-		</code></pre>
+			<section data-transition="fade">
+				<h2>Key Features of WCDMA</h2>
+				<ul>
+					<li class="fragment">High data rates</li>
+					<li class="fragment">Improved capacity</li>
+					<li class="fragment">Better voice quality</li>
+					<li class="fragment">Seamless handovers</li>
+				</ul>
 			</section>
 
-
-			<section>
-
-				<section data-auto-animate>
-					<h3>Output</h3>
-					<pre data-id="code"><code data-line-numbers class="hljs" data-trim>
-								3 * 2 * 1
-								6
-							</code></pre>
-				</section>
-
-
+			<section data-transition="fade">
+				<h2>WCDMA Architecture</h2>
+				<p>
+					WCDMA architecture consists of:
+				</p>
+				<ul>
+					<li class="fragment">User Equipment (UE)</li>
+					<li class="fragment">Node B (Base station)</li>
+					<li class="fragment">Radio Network Controller (RNC)</li>
+					<li class="fragment">Core Network (CN)</li>
+				</ul>
 			</section>
-			<section>
+
+			<section data-transition="fade">
+				<h2>Benefits of WCDMA</h2>
+				<ul>
+					<li class="fragment">Global standard</li>
+					<li class="fragment">Flexible deployment</li>
+					<li class="fragment">Supports multimedia services</li>
+					<li class="fragment">Smooth migration to higher speeds</li>
+				</ul>
+			</section>
+
+			<section data-transition="fade">
 				<section>
-					<h3>Let's solve Tower Of Honai with Recursion</h3>
-					<img class="tower-img" src="tower-of-hanoi-2108289-1773828.png" alt="">
+					<h2>Challenges and Future Outlook</h2>
+					<p>
+						Challenges faced by WCDMA:
+					</p>
+					<ul>
+						<li class="fragment">Spectrum limitations</li>
+						<li class="fragment">Transition to 4G and 5G</li>
+					</ul>
+					
 				</section>
-
-				<section data-auto-animate>
-					<h4>Code</h4>
-					<pre data-id="code"><code data-line-numbers class="hljs" data-trim>
-function tower(n, fromStick, toStick, usingStick) {
-	...
-}
-						</code></pre>
-				</section>
-
-				<section data-auto-animate>
-					<h4>Code</h4>
-					<pre data-id="code"><code data-line-numbers class="javascript" data-trim>
-function tower(n, fromStick, toStick, usingStick) {
-
-	tower(n - 1, fromStick, usingStick, toStick, steps++)
-
-	console.log
-	(`Move Disk ${n} from ${fromStick} to ${toStick}`)
-}
-						</code></pre>
-				</section>
-
-				<section data-auto-animate>
-					<h4>Code</h4>
-					<pre data-id="code"><code data-line-numbers class="jsx" data-trim>
-let steps = 0
-
-function tower(n, fromStick, toStick, usingStick) {
-
-	tower(n - 1, fromStick, usingStick, toStick, steps++)
-
-	console.log
-	(`Move Disk ${n} from ${fromStick} to ${toStick}`)
-
-	tower(n - 1, usingStick, toStick, fromStick, steps++)
-
-
-}
-						</code></pre>
+				<section>
+					<p>
+						However, WCDMA will continue to be an essential part of legacy networks and provide backward
+						compatibility for older devices.
+					</p>
 				</section>
 			</section>
 
-			<section>
-
-
-				<section data-auto-animate>
-					<h4>Code</h4>
-					<pre data-id="code"><code data-line-numbers class="js" data-trim>
-let steps = 0
-function tower(n, fromStick, toStick, usingStick) {
-
-	if (n == 1) {
-		console.log
-			(`Move Disk1 from ${fromStick} to ${toStick}`)
-		steps++
-		return 0
-	}
-
-	tower(n - 1, fromStick, usingStick, toStick, steps++)
-
-	console.log
-		(`Move Disk ${n} from ${fromStick} to ${toStick}`)
-
-	tower(n - 1, usingStick, toStick, fromStick, steps++)
-
-}
-							
-						</code></pre>
-				</section>
-
-				<section data-auto-animate>
-					<h5>Let's Call the Function</h5>
-					<pre data-id="code"><code data-line-numbers class="hljs" data-trim>
-let noOfDisks = 3
-tower(noOfDisks, 'A', 'C', 'B')
-console.log(`Total Steps = ${steps}`)
-						</code></pre>
-				</section>
-
+			<section data-transition="fade">
+				<h2>Thank You!</h2>
+				<p>
+					Thank you for being a part of this presentation on WCDMA.
+					We hope this session provided valuable insights.
+					If you have any further questions or would like to discuss more, please feel free to reach out.
+					Have a great day!
+				</p>
 			</section>
 
 
-
-			<section>
-				<section data-auto-animate>
-					<h3>Output</h3>
-					<ul>
-						<li>Move Disk 1 from A to C</li>
-					</ul>
-				</section>
-				<section data-auto-animate>
-					<h3>Output</h3>
-					<ul>
-						<li>Move Disk 1 from A to C</li>
-						<li>Move Disk 2 from A to B</li>
-					</ul>
-				</section>
-				<section data-auto-animate>
-					<h3>Output</h3>
-					<ul>
-						<li>Move Disk 1 from A to C</li>
-						<li>Move Disk 2 from A to B</li>
-						<li>Move Disk 1 from C to B</li>
-					</ul>
-				</section>
-
-				<section data-auto-animate>
-					<h3>Output</h3>
-					<ul>
-						<li>Move Disk 1 from A to C</li>
-						<li>Move Disk 2 from A to B</li>
-						<li>Move Disk 1 from C to B</li>
-						<li>Move Disk 3 from A to C</li>
-					</ul>
-				</section>
-
-				<section data-auto-animate>
-					<h3>Output</h3>
-					<ul>
-						<li>Move Disk 1 from A to C</li>
-						<li>Move Disk 2 from A to B</li>
-						<li>Move Disk 1 from C to B</li>
-						<li>Move Disk 3 from A to C</li>
-						<li>Move Disk 1 from B to A</li>
-					</ul>
-				</section>
-
-				<section data-auto-animate>
-					<h3>Output</h3>
-					<ul>
-						<li>Move Disk 1 from A to C</li>
-						<li>Move Disk 2 from A to B</li>
-						<li>Move Disk 1 from C to B</li>
-						<li>Move Disk 3 from A to C</li>
-						<li>Move Disk 1 from B to A</li>
-						<li>Move Disk 2 from B to C</li>
-					</ul>
-				</section>
-
-				<section data-auto-animate>
-					<h3>Output</h3>
-					<ul>
-						<li>Move Disk 1 from A to C</li>
-						<li>Move Disk 2 from A to B</li>
-						<li>Move Disk 1 from C to B</li>
-						<li>Move Disk 3 from A to C</li>
-						<li>Move Disk 1 from B to A</li>
-						<li>Move Disk 2 from B to C</li>
-						<li>Move Disk 1 from A to C</li>
-					</ul>
-				</section>
-				<section data-auto-animate>
-					Total Steps = 7
-				</section>
-
-				<section data-auto-animate="">
-					<a href="https://aa961.github.io/honai" target="_blank">Run By Vue Js</a>
-				</section>
-			</section>
-
-			<section>
-				<h3>Real Life Application With Tower Of Honai</h3>
-			</section>
-
-			<section>
-				<section data-auto-animate>
-					<h4>Real Life Application With Tower Of Honai</h4>
-
-					<ul>
-						<li>Used as backup rotation scheme (Backup of computers having multiple tapes/media)</li>
-					</ul>
-				</section>
-				
-				<section data-auto-animate>
-					<h4>Real Life Application With Tower Of Honai</h4>
-
-					<ul>
-						<li>Used as backup rotation scheme (Backup of computers having multiple tapes/media)</li>
-						<li>Used by Neurophychologists trying to evalute frontal lobe deficits</li>
-					</ul>
-				</section>
-
-				<section data-auto-animate>
-					<h4>Real Life Application With Tower Of Honai</h4>
-
-					<ul>
-						<li>Used as backup rotation scheme (Backup of computers having multiple tapes/media)</li>
-						<li>Used by Neurophychologists trying to evalute frontal lobe deficits</li>
-						<li>Used to solve methimcatical problems related to Hamilton Cycle</li>
-					</ul>
-				</section>
-
-			</section>
-
-			<section>
-				<h3>Refrences</h3>
-				<p>https://aa961.github.io/Recursion</p>
-				<p>https://aa961.github.io/honai</p>
-				<p>https://github.com/aa961</p>
-			</section>
-
-			<section>
-				<h2>Thank You</h2>
-				<p style="margin-top: 10rem;"><-----End of Presentation-----></p>
-			</section>
-
-
-			<div class="signature">
-				<h6>Created By Ammar Ahmed</h6>
-			</div>
 		</div>
 
 		<script src="dist/reveal.js"></script>
