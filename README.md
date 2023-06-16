@@ -6,7 +6,7 @@ This repository contains a presentation on WCDMA (Wideband Code Division Multipl
 
 The presentation is built using [Reveal.js](https://revealjs.com/), a powerful framework for creating beautiful HTML presentations. The slides are written in HTML using the Reveal.js syntax.
 
-##Viewing the Presentation
+## Viewing the Presentation
 
 To view the presentation, simply open the `index.html` file in a web browser that supports JavaScript. Each slide can be navigated using the arrow keys or by using the provided navigation controls.
 
